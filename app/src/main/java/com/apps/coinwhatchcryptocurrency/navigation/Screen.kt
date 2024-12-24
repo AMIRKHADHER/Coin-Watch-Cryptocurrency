@@ -12,7 +12,7 @@ sealed class NavigationBarScreen(
         nameResourcesId = R.string.market_screen
     )
 
-    data object Favorites : NavigationBarScreen(
+    data object Favourites : NavigationBarScreen(
         route = "favorite_screen",
         nameResourcesId = R.string.favourites_screen
     )
@@ -22,4 +22,10 @@ sealed class NavigationBarScreen(
         nameResourcesId = R.string.search_screen
     )
 
+}
+
+sealed class Screen(val route: String) {
+    data object Details : Screen("details_screen")
+    data object Settings : Screen("settings_screen")
+    data object NavigationBar : Screen("navigation_bar_screen")
 }
