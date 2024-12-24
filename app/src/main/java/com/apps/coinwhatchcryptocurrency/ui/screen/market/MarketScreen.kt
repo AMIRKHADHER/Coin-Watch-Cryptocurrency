@@ -9,13 +9,16 @@ import androidx.compose.ui.Modifier
 
 @Composable
 fun MarketScreen(){
-    Box(modifier = Modifier.fillMaxWidth(),
-        contentAlignment= Alignment.Center,
-        ){
-        Text(
-            text = "Market Screen ",
-            modifier = Modifier
-        )
-    }
+   MarketContenent(
+      uiState = MarketUiState()
+   )
+
+}
+
+@Composable
+fun MarketContenent(
+   uiState: MarketUiState,
+
+) {
 
 }
